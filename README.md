@@ -9,15 +9,10 @@
 
 
 
-<table border="0" width="73%">
-  <tr>
-    <td width="109%"><font size="4"><b><i>Diseño de un módulo para control de
+<font size="4"><b><i>Diseño de un módulo para control de
       8 servos y 5 canales analógicos por bus I<sup>2</sup>C</i></b></font>
       <p>Por Alejandro Alonso Puig<br>
       Octubre 2.003<br>
-     </td>
-  </tr>
-</table>
 <hr>
 <p align="justify"><br>
 El presente repositorio incluye no solo los programas y esquemático del circuito en Eagle, 
