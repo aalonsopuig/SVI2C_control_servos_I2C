@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>mundobot.com. Web de Robótica de Alejandro Alonso Puig</title>
+</head>
+
+<body background="../../Images/Fons2.gif">
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+
+<table border="0" width="73%">
+  <tr>
+    <td width="109%"><font size="4"><b><i>Diseño de un módulo para control de
+      8 servos y 5 canales analógicos por bus I<sup>2</sup>C</i></b></font>
+      <p>Por Alejandro Alonso Puig<br>
+      Octubre 2.003<br>
+      <a href="http://mundobot.com">mundobot.com</a></p>
+    </td>
+    <td width="1%" valign="top">
+      <p align="right"><img border="0" src="../../Images/I2c_icon.gif" width="52" height="55">
+      <p align="right">&nbsp;</td>
+  </tr>
+</table>
+<hr>
+<p align="justify"><br>
+El siguiente informe técnico describe el diseño, tanto desde el punto de vista
+electrónico, como informático de un placa para control por bus I<sup>2</sup>C
+de 8 servos estándar de radiocontrol y 5 entradas analógicas (Conversión
+analógica/digital). Las características principales del módulo presentado son
+las siguientes:&nbsp;</p>
+<ul>
+  <li>
+    <p align="justify">Actúa como Slave permitiendo seleccionar mediante
+    switches dip la dirección que utilizará en la red I<sup>2</sup>C.&nbsp;</li>
+  <li>
+    <p align="justify">Se puede establecer mediante bus I<sup>2</sup>C tanto la
+    posición deseada de cada servo, como el sentido de giro y el Offset.&nbsp;</li>
+  <li>
+    <p align="justify">Se puede leer por bus I<sup>2</sup>C el valor digital (8
+    bits) correspondiente a cualquiera de las 5 entradas analógicas de las que
+    dispone.&nbsp;</li>
+</ul>
+<p align="justify">&nbsp;</p>
+<p align="center"><img border="0" src="SVI2Ccon.jpg" width="503" height="378"></p>
+<p align="justify">La ventaja que se obtiene con este tipo de módulos es
+precisamente el control por bus I<sup>2</sup>C que permite tener varios módulos
+de este tipo ventaja que se obtiene con este tipo de módulos es precisamente el
+control por bus I<sup>2</sup>C que permite tener varios módulos de este tipo
+conectados al mismo bus. De esta manera pueden controlarse gran cantidad de
+servos desde un controlador principal sin apenas sobrecarga en el mismo.
+Adicionalmente se tiene medida de valores analógicos, muy útil para
+determinado tipo de sensores.</p>
+<ul>
+  <li>
+    <p align="justify"><a href="SVI2C.pdf">Informe Técnico</a>    <font size="1">(.PDF
+    1'7Mb)</font></li>
+  <li>
+    <p align="justify"><a href="SVI2C.sch">Esquema electrónico</a><a href="../Svd01/svd01_04.asm"></a>
+    <font size="1">(Formato Eagle .SCH 146Kb)</font></li>
+  <li>
+    <p align="justify"><a href="svi2c02.asm">Firmware (Programa Slave)</a><a href="../Svd01/svd01_04.asm"></a>
+    <font size="1">(.ASM 32Kb)</font></li>
+  <li>
+    <p align="justify"><a href="msvi-02.asm">Programa Master de ejemplo</a><a href="../Svd01/svd01_04.asm"></a>
+    <font size="1">(.ASM 18Kb)</font></li>
+  <li>
+    <p align="justify"><a href="SVI2C.avi">Video
+    del servo en acción</a><font size="1"> (.AVI 2Mb)</font></li>
+</ul>
+<p><b>Nota</b>: Master y Slave han de estar conectados mediante tres hilos:
+Masa, SCL y SDA. El módulo presentado incluye las resistencias de PullUp, por
+lo que no es necesario añadirlas.</p>
+<p>
+  <br>
+<b>LINKS RELACIONADOS</b></p>
+  <ul>
+    <li><a href="http://www.microchip.com/1010/pline/picmicro/category/embctrl/14kbytes/devices/16f876/index.htm" target="_blank">PIC16F87x
+      Datasheet</a></li>
+    <li><a href="http://www.microchip.com/download/appnote/pic16/00734a.pdf" target="_blank">Using
+      the PICmicro SSP for Slave I2CTM Communication</a>   <font size="2">(PDF )</font></li>
+    <li><a href="http://www.microchip.com/download/appnote/pic16/00735a.pdf" target="_blank">Using
+      the PICmicro MSSP Module for Master I2C Communications</a><a href="http://www.microchip.com/download/appnote/pic16/00734a.pdf" target="_blank"></a>
+      <font size="2">(PDF )</font></li>
+    <li><a href="http://www.semiconductors.philips.com/buses/i2c/" target="_blank">Página
+      I2C de Philips</a></li>
+  </ul>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<p align="right"><script>document.write('Actualizado (mes/día/año):  '+document.lastModified)</script></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+</body>
+
+</html>
