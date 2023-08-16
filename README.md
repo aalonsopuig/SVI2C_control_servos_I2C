@@ -32,6 +32,8 @@ las siguientes:&nbsp;</p>
     <p align="justify">Se puede leer por bus I<sup>2</sup>C el valor digital (8
     bits) correspondiente a cualquiera de las 5 entradas analógicas de las que
     dispone.&nbsp;</li>
+  <li>
+    <p align="justify">Implementa un microcontrolador PIC 16F876 programado en ensamblador, lo que hace el código muy rápido.&nbsp;</li>
 </ul>
 <p align="justify">&nbsp;</p>
 <p align="center"><img border="0" src="SVI2Ccon.jpg" width="503" height="378"></p>
